@@ -1,0 +1,562 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C30CB7CE1FC55B49007B61BE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C30CB7CD1FC55B49007B61BE /* main.m */; };
+		C30CB7D11FC55B49007B61BE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C30CB7D01FC55B49007B61BE /* AppDelegate.m */; };
+		C30CB7D91FC55B4A007B61BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C30CB7D81FC55B4A007B61BE /* Assets.xcassets */; };
+		C30CB7E71FC55B4B007B61BE /* TelstraPOCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C30CB7E61FC55B4B007B61BE /* TelstraPOCTests.m */; };
+		C30CB7F21FC55B4C007B61BE /* TelstraPOCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C30CB7F11FC55B4C007B61BE /* TelstraPOCUITests.m */; };
+		C34ECFF31FC80DD200EF0DD0 /* DataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C34ECFF21FC80DD100EF0DD0 /* DataModel.m */; };
+		C38814651FC57F3D00C5E8CE /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C38814641FC57F3D00C5E8CE /* MainViewController.m */; };
+		C3C33A061FC6C1FD00B61056 /* JsonData.json in Resources */ = {isa = PBXBuildFile; fileRef = C3C33A051FC6C1FD00B61056 /* JsonData.json */; };
+		C3C33A0F1FC6DD0F00B61056 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3C33A0E1FC6DD0F00B61056 /* ImageIO.framework */; };
+		C3C33A131FC6DDC700B61056 /* SDWebImage in Resources */ = {isa = PBXBuildFile; fileRef = C3C33A121FC6DDC700B61056 /* SDWebImage */; };
+		C3C33A141FC6E33500B61056 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; fileRef = C3C33A121FC6DDC700B61056 /* SDWebImage */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C30CB7E31FC55B4B007B61BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C30CB7C11FC55B48007B61BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C30CB7C81FC55B48007B61BE;
+			remoteInfo = TelstraPOC;
+		};
+		C30CB7EE1FC55B4B007B61BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C30CB7C11FC55B48007B61BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C30CB7C81FC55B48007B61BE;
+			remoteInfo = TelstraPOC;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C30CB7C91FC55B49007B61BE /* TelstraPOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TelstraPOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C30CB7CD1FC55B49007B61BE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C30CB7CF1FC55B49007B61BE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C30CB7D01FC55B49007B61BE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C30CB7D81FC55B4A007B61BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C30CB7DD1FC55B4A007B61BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C30CB7E21FC55B4B007B61BE /* TelstraPOCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TelstraPOCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C30CB7E61FC55B4B007B61BE /* TelstraPOCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TelstraPOCTests.m; sourceTree = "<group>"; };
+		C30CB7E81FC55B4B007B61BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C30CB7ED1FC55B4B007B61BE /* TelstraPOCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TelstraPOCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C30CB7F11FC55B4C007B61BE /* TelstraPOCUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TelstraPOCUITests.m; sourceTree = "<group>"; };
+		C30CB7F31FC55B4C007B61BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C34ECFF11FC80DD100EF0DD0 /* DataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataModel.h; sourceTree = "<group>"; };
+		C34ECFF21FC80DD100EF0DD0 /* DataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataModel.m; sourceTree = "<group>"; };
+		C38814631FC57F3D00C5E8CE /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		C38814641FC57F3D00C5E8CE /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		C3C33A051FC6C1FD00B61056 /* JsonData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = JsonData.json; sourceTree = "<group>"; };
+		C3C33A0E1FC6DD0F00B61056 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		C3C33A121FC6DDC700B61056 /* SDWebImage */ = {isa = PBXFileReference; lastKnownFileType = folder; name = SDWebImage; path = TelstraPOC/SDWebImage; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C30CB7C61FC55B48007B61BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3C33A141FC6E33500B61056 /* SDWebImage in Frameworks */,
+				C3C33A0F1FC6DD0F00B61056 /* ImageIO.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C30CB7DF1FC55B4B007B61BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C30CB7EA1FC55B4B007B61BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C30CB7C01FC55B48007B61BE = {
+			isa = PBXGroup;
+			children = (
+				C30CB7CB1FC55B49007B61BE /* TelstraPOC */,
+				C30CB7E51FC55B4B007B61BE /* TelstraPOCTests */,
+				C30CB7F01FC55B4B007B61BE /* TelstraPOCUITests */,
+				C30CB7CA1FC55B49007B61BE /* Products */,
+				C3C33A0D1FC6DD0F00B61056 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C30CB7CA1FC55B49007B61BE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C30CB7C91FC55B49007B61BE /* TelstraPOC.app */,
+				C30CB7E21FC55B4B007B61BE /* TelstraPOCTests.xctest */,
+				C30CB7ED1FC55B4B007B61BE /* TelstraPOCUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C30CB7CB1FC55B49007B61BE /* TelstraPOC */ = {
+			isa = PBXGroup;
+			children = (
+				C34ECFF61FC8166700EF0DD0 /* Resources */,
+				C34ECFF51FC815FF00EF0DD0 /* Controller */,
+				C34ECFF41FC815F500EF0DD0 /* Model */,
+				C30CB7CC1FC55B49007B61BE /* Supporting Files */,
+			);
+			path = TelstraPOC;
+			sourceTree = "<group>";
+		};
+		C30CB7CC1FC55B49007B61BE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C30CB7DD1FC55B4A007B61BE /* Info.plist */,
+				C30CB7CD1FC55B49007B61BE /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C30CB7E51FC55B4B007B61BE /* TelstraPOCTests */ = {
+			isa = PBXGroup;
+			children = (
+				C30CB7E61FC55B4B007B61BE /* TelstraPOCTests.m */,
+				C30CB7E81FC55B4B007B61BE /* Info.plist */,
+			);
+			path = TelstraPOCTests;
+			sourceTree = "<group>";
+		};
+		C30CB7F01FC55B4B007B61BE /* TelstraPOCUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C30CB7F11FC55B4C007B61BE /* TelstraPOCUITests.m */,
+				C30CB7F31FC55B4C007B61BE /* Info.plist */,
+			);
+			path = TelstraPOCUITests;
+			sourceTree = "<group>";
+		};
+		C34ECFF41FC815F500EF0DD0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C34ECFF11FC80DD100EF0DD0 /* DataModel.h */,
+				C34ECFF21FC80DD100EF0DD0 /* DataModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		C34ECFF51FC815FF00EF0DD0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C30CB7CF1FC55B49007B61BE /* AppDelegate.h */,
+				C30CB7D01FC55B49007B61BE /* AppDelegate.m */,
+				C38814631FC57F3D00C5E8CE /* MainViewController.h */,
+				C38814641FC57F3D00C5E8CE /* MainViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		C34ECFF61FC8166700EF0DD0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C3C33A051FC6C1FD00B61056 /* JsonData.json */,
+				C30CB7D81FC55B4A007B61BE /* Assets.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		C3C33A0D1FC6DD0F00B61056 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C3C33A121FC6DDC700B61056 /* SDWebImage */,
+				C3C33A0E1FC6DD0F00B61056 /* ImageIO.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C30CB7C81FC55B48007B61BE /* TelstraPOC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C30CB7F61FC55B4C007B61BE /* Build configuration list for PBXNativeTarget "TelstraPOC" */;
+			buildPhases = (
+				C30CB7C51FC55B48007B61BE /* Sources */,
+				C30CB7C61FC55B48007B61BE /* Frameworks */,
+				C30CB7C71FC55B48007B61BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TelstraPOC;
+			productName = TelstraPOC;
+			productReference = C30CB7C91FC55B49007B61BE /* TelstraPOC.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C30CB7E11FC55B4B007B61BE /* TelstraPOCTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C30CB7F91FC55B4C007B61BE /* Build configuration list for PBXNativeTarget "TelstraPOCTests" */;
+			buildPhases = (
+				C30CB7DE1FC55B4B007B61BE /* Sources */,
+				C30CB7DF1FC55B4B007B61BE /* Frameworks */,
+				C30CB7E01FC55B4B007B61BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C30CB7E41FC55B4B007B61BE /* PBXTargetDependency */,
+			);
+			name = TelstraPOCTests;
+			productName = TelstraPOCTests;
+			productReference = C30CB7E21FC55B4B007B61BE /* TelstraPOCTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C30CB7EC1FC55B4B007B61BE /* TelstraPOCUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C30CB7FC1FC55B4C007B61BE /* Build configuration list for PBXNativeTarget "TelstraPOCUITests" */;
+			buildPhases = (
+				C30CB7E91FC55B4B007B61BE /* Sources */,
+				C30CB7EA1FC55B4B007B61BE /* Frameworks */,
+				C30CB7EB1FC55B4B007B61BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C30CB7EF1FC55B4B007B61BE /* PBXTargetDependency */,
+			);
+			name = TelstraPOCUITests;
+			productName = TelstraPOCUITests;
+			productReference = C30CB7ED1FC55B4B007B61BE /* TelstraPOCUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C30CB7C11FC55B48007B61BE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = mac_admin;
+				TargetAttributes = {
+					C30CB7C81FC55B48007B61BE = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+					C30CB7E11FC55B4B007B61BE = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C30CB7C81FC55B48007B61BE;
+					};
+					C30CB7EC1FC55B4B007B61BE = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C30CB7C81FC55B48007B61BE;
+					};
+				};
+			};
+			buildConfigurationList = C30CB7C41FC55B48007B61BE /* Build configuration list for PBXProject "TelstraPOC" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C30CB7C01FC55B48007B61BE;
+			productRefGroup = C30CB7CA1FC55B49007B61BE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C30CB7C81FC55B48007B61BE /* TelstraPOC */,
+				C30CB7E11FC55B4B007B61BE /* TelstraPOCTests */,
+				C30CB7EC1FC55B4B007B61BE /* TelstraPOCUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C30CB7C71FC55B48007B61BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3C33A061FC6C1FD00B61056 /* JsonData.json in Resources */,
+				C3C33A131FC6DDC700B61056 /* SDWebImage in Resources */,
+				C30CB7D91FC55B4A007B61BE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C30CB7E01FC55B4B007B61BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C30CB7EB1FC55B4B007B61BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C30CB7C51FC55B48007B61BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C34ECFF31FC80DD200EF0DD0 /* DataModel.m in Sources */,
+				C30CB7D11FC55B49007B61BE /* AppDelegate.m in Sources */,
+				C30CB7CE1FC55B49007B61BE /* main.m in Sources */,
+				C38814651FC57F3D00C5E8CE /* MainViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C30CB7DE1FC55B4B007B61BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C30CB7E71FC55B4B007B61BE /* TelstraPOCTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C30CB7E91FC55B4B007B61BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C30CB7F21FC55B4C007B61BE /* TelstraPOCUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C30CB7E41FC55B4B007B61BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C30CB7C81FC55B48007B61BE /* TelstraPOC */;
+			targetProxy = C30CB7E31FC55B4B007B61BE /* PBXContainerItemProxy */;
+		};
+		C30CB7EF1FC55B4B007B61BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C30CB7C81FC55B48007B61BE /* TelstraPOC */;
+			targetProxy = C30CB7EE1FC55B4B007B61BE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C30CB7F41FC55B4C007B61BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C30CB7F51FC55B4C007B61BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C30CB7F71FC55B4C007B61BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TelstraPOC/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_BUNDLE_IDENTIFIER = com.infosys.T.TelstraPOC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C30CB7F81FC55B4C007B61BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TelstraPOC/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_BUNDLE_IDENTIFIER = com.infosys.T.TelstraPOC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C30CB7FA1FC55B4C007B61BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TelstraPOCTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.infosys.T.TelstraPOCTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TelstraPOC.app/TelstraPOC";
+			};
+			name = Debug;
+		};
+		C30CB7FB1FC55B4C007B61BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TelstraPOCTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.infosys.T.TelstraPOCTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TelstraPOC.app/TelstraPOC";
+			};
+			name = Release;
+		};
+		C30CB7FD1FC55B4C007B61BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TelstraPOCUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.infosys.T.TelstraPOCUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TelstraPOC;
+			};
+			name = Debug;
+		};
+		C30CB7FE1FC55B4C007B61BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TelstraPOCUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.infosys.T.TelstraPOCUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TelstraPOC;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C30CB7C41FC55B48007B61BE /* Build configuration list for PBXProject "TelstraPOC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C30CB7F41FC55B4C007B61BE /* Debug */,
+				C30CB7F51FC55B4C007B61BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C30CB7F61FC55B4C007B61BE /* Build configuration list for PBXNativeTarget "TelstraPOC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C30CB7F71FC55B4C007B61BE /* Debug */,
+				C30CB7F81FC55B4C007B61BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C30CB7F91FC55B4C007B61BE /* Build configuration list for PBXNativeTarget "TelstraPOCTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C30CB7FA1FC55B4C007B61BE /* Debug */,
+				C30CB7FB1FC55B4C007B61BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C30CB7FC1FC55B4C007B61BE /* Build configuration list for PBXNativeTarget "TelstraPOCUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C30CB7FD1FC55B4C007B61BE /* Debug */,
+				C30CB7FE1FC55B4C007B61BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C30CB7C11FC55B48007B61BE /* Project object */;
+}
