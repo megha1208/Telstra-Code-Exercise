@@ -8,7 +8,8 @@
 
 #import "MainViewController.h"
 #import "SDWebImage/UIImageView+WebCache.h"
-
+#import "Constant.h"
+#import "SubtitleTableViewCell.h"
 
 @interface MainViewController ()
 
@@ -40,13 +41,23 @@
 }
 
 //Customizing the View
+
+-(void)loadInitialView
+{
+    self.view.backgroundColor = TEAL;
+    
+}
+-(void)loadTableView
+{
+    
+}
 -(void)loadView
 {
     self.view = [[UIView alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
     // Creating table View
     self.tableView = [[UITableView alloc] init];
-    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"Cell"];
+    [self.tableView registerClass:[SubtitleTableViewCell class] forCellReuseIdentifier:@"Cell"];
     
     //Adding table view to the view
     [self.view addSubview:self.tableView];
@@ -86,49 +97,41 @@
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    SubtitleTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
-    }
+    
+    
     
     //Creating model Object to access data
+    
     DataModel *modelObject = (DataModel *)self.tableDataArray[indexPath.row];
     NSString *dataTitle = modelObject.title;
     NSString *description = modelObject.imageDescription;
     
-    
-    if(dataTitle == (id)[NSNull null])
+    if(dataTitle != (id)[NSNull null])
     {
-        if(description != (id)[NSNull null])
-        {
-            cell.textLabel.text = description;
-        }
-        else
-        {
-            cell.textLabel.text = @"No data Found";
-        }
+        cell.textLabel.text = dataTitle;
     }
     else
     {
-        NSMutableString *title = [dataTitle mutableCopy];
-        
-        if(description != (id)[NSNull null])
-        {
-            [title appendString:@"\n\n"];
-            [title appendString:description];
-            
-            cell.textLabel.numberOfLines = 0;
-            cell.textLabel.lineBreakMode = NSLineBreakByWordWrapping;
-            cell.textLabel.font = [UIFont fontWithName:@"Helvetica" size:10.0];
-        }
-        cell.textLabel.text = title;
+        cell.textLabel.text = nil;
+    }
+    if (description != (id)[NSNull null])
+    {
+        cell.detailTextLabel.text = description;
+    }
+    else
+    {
+        cell.detailTextLabel.text = nil;
     }
     
     NSString *imageURLString = modelObject.imageURL;
     
+    
     //Setting Placeholder Image
     cell.imageView.image = [UIImage imageNamed:@"placeholderImage"];
+    
+    //customImageView.image = [UIImage imageNamed:@"placeholderImage"];
     if(imageURLString != (id)[NSNull null])
     {
         
@@ -137,15 +140,18 @@
             if (succeeded) {
                 // change the image in the cell
                 cell.imageView.image = image;
+                //customImageView.image = image;
             }
         }];
     }
     else{
         //Setting the image in case the URL is none
         cell.imageView.image = [UIImage imageNamed:@"noImage"];
+        //customImageView.image = [UIImage imageNamed:@"noImage"];
     }
     
     //Framimg the imageView
+    
     CGSize itemSize = CGSizeMake(60, 60);
     UIGraphicsBeginImageContextWithOptions(itemSize, NO, UIScreen.mainScreen.scale);
     CGRect imageRect = CGRectMake(0.0, 0.0, itemSize.width, itemSize.height);
@@ -162,12 +168,12 @@
     
     //UITableViewCell *cell = (UITableViewCell *)[tableView cellForRowAtIndexPath:indexPath];
     
-    UIFont *cellFont = [UIFont fontWithName:@"Helvetica" size:10.0];
+    
+    UIFont *cellFont = [UIFont fontWithName:@"Helvetica" size:12.0];
     CGSize constraintSize = CGSizeMake(280.0f, MAXFLOAT);
     
     DataModel *modelObject = (DataModel *)self.tableDataArray[indexPath.row];
     NSString *title = modelObject.imageDescription;
-    //CGSize labelSize = CGSizeMake(MAXFLOAT, 100);
     CGRect rowRect;
     
     NSMutableDictionary *attr = [NSMutableDictionary dictionary];
@@ -177,10 +183,15 @@
     [attr setObject:cellFont forKey:NSFontAttributeName];
     if (title != (id)[NSNull null]) {
         rowRect = [title boundingRectWithSize:constraintSize options:NSStringDrawingUsesLineFragmentOrigin attributes:attr context:nil];
-        //labelSize = [title sizeWithFont:cellFont constrainedToSize:constraintSize lineBreakMode:UILineBreakModeWordWrap];
     }
     
-    return rowRect.size.height + 60;
+    return rowRect.size.height + 75;
+}
+
+-(void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    cell.detailTextLabel.numberOfLines = 0;
+    cell.detailTextLabel.lineBreakMode = NSLineBreakByWordWrapping;
 }
 
 #pragma mark - Helper Methods
@@ -200,7 +211,7 @@
         }
         else if (error)
         {
-            NSLog(@"Failed.. Error; %@",[error localizedDescription]);
+            //NSLog(@"Failed.. Error; %@",[error localizedDescription]);
             
             //In case network issue load the Local Json File
             NSString *jsonPath = [[NSBundle mainBundle] pathForResource:@"JsonData" ofType:@"json"];
@@ -221,10 +232,6 @@
                     [self.tableDataArray addObject:modelObject];
                     navTitle = [jsonDict valueForKey:@"title"];
                 }
-            }
-            else
-            {
-                NSLog(@"Failed.. Error; %@",[jsonError localizedDescription]);
             }
         }
     }

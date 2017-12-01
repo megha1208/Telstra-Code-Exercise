@@ -13,6 +13,8 @@
 		C30CB7E71FC55B4B007B61BE /* TelstraPOCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C30CB7E61FC55B4B007B61BE /* TelstraPOCTests.m */; };
 		C30CB7F21FC55B4C007B61BE /* TelstraPOCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C30CB7F11FC55B4C007B61BE /* TelstraPOCUITests.m */; };
 		C34ECFF31FC80DD200EF0DD0 /* DataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C34ECFF21FC80DD100EF0DD0 /* DataModel.m */; };
+		C34ECFFD1FC8389B00EF0DD0 /* Constant.m in Sources */ = {isa = PBXBuildFile; fileRef = C34ECFFC1FC8389B00EF0DD0 /* Constant.m */; };
+		C378F0E31FD183A500F57FBB /* SubtitleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C378F0E21FD183A500F57FBB /* SubtitleTableViewCell.m */; };
 		C38814651FC57F3D00C5E8CE /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C38814641FC57F3D00C5E8CE /* MainViewController.m */; };
 		C3C33A061FC6C1FD00B61056 /* JsonData.json in Resources */ = {isa = PBXBuildFile; fileRef = C3C33A051FC6C1FD00B61056 /* JsonData.json */; };
 		C3C33A0F1FC6DD0F00B61056 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3C33A0E1FC6DD0F00B61056 /* ImageIO.framework */; };
@@ -52,6 +54,10 @@
 		C30CB7F31FC55B4C007B61BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C34ECFF11FC80DD100EF0DD0 /* DataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataModel.h; sourceTree = "<group>"; };
 		C34ECFF21FC80DD100EF0DD0 /* DataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataModel.m; sourceTree = "<group>"; };
+		C34ECFFB1FC8389B00EF0DD0 /* Constant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
+		C34ECFFC1FC8389B00EF0DD0 /* Constant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constant.m; sourceTree = "<group>"; };
+		C378F0E11FD183A400F57FBB /* SubtitleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubtitleTableViewCell.h; sourceTree = "<group>"; };
+		C378F0E21FD183A500F57FBB /* SubtitleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubtitleTableViewCell.m; sourceTree = "<group>"; };
 		C38814631FC57F3D00C5E8CE /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		C38814641FC57F3D00C5E8CE /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		C3C33A051FC6C1FD00B61056 /* JsonData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = JsonData.json; sourceTree = "<group>"; };
@@ -161,6 +167,10 @@
 				C30CB7D01FC55B49007B61BE /* AppDelegate.m */,
 				C38814631FC57F3D00C5E8CE /* MainViewController.h */,
 				C38814641FC57F3D00C5E8CE /* MainViewController.m */,
+				C378F0E11FD183A400F57FBB /* SubtitleTableViewCell.h */,
+				C378F0E21FD183A500F57FBB /* SubtitleTableViewCell.m */,
+				C34ECFFB1FC8389B00EF0DD0 /* Constant.h */,
+				C34ECFFC1FC8389B00EF0DD0 /* Constant.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -319,7 +329,9 @@
 				C34ECFF31FC80DD200EF0DD0 /* DataModel.m in Sources */,
 				C30CB7D11FC55B49007B61BE /* AppDelegate.m in Sources */,
 				C30CB7CE1FC55B49007B61BE /* main.m in Sources */,
+				C34ECFFD1FC8389B00EF0DD0 /* Constant.m in Sources */,
 				C38814651FC57F3D00C5E8CE /* MainViewController.m in Sources */,
+				C378F0E31FD183A500F57FBB /* SubtitleTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
